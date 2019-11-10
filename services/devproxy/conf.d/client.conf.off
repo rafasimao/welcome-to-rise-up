@@ -1,0 +1,12 @@
+upstream riseup {
+  server riseup.local:8080;
+}
+
+server {
+  listen 80;
+  server_name riseup.local;
+
+  location / {
+    proxy_pass http://riseup;
+  }
+}
