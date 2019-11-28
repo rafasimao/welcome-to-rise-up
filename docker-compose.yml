@@ -30,8 +30,8 @@ services:
     container_name: api
     build:
       context: ./apps/api
-    # env_file:
-    #   - ./config/api.env
+    env_file:
+      - ./config/api.env
     volumes:
       - ./apps/api:/app
     ports:
