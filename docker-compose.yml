@@ -1,6 +1,6 @@
 version: '3'
 services:
-  proxy.raiseup.local:
+  proxy.riseup.local:
     image: nginx
     container_name: proxy
     volumes:
