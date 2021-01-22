@@ -33,6 +33,7 @@ services:
     env_file:
       - ./config/api.env
     volumes:
+      - api.riseup.vendor:/app/vendor
       - ./apps/api:/app
     ports:
       - 3000:3000
@@ -48,3 +49,6 @@ services:
       - ./config/database.env
     ports:
       - 5432:5432
+
+volumes:
+  api.riseup.vendor: {}
