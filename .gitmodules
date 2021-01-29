@@ -1,3 +1,6 @@
 [submodule "apps/api"]
 	path = apps/api
 	url = git@github.com:rafasimao/rise-up-api.git
+[submodule "apps/client"]
+	path = apps/client
+	url = git@github.com:rafasimao/rise-up-client.git
